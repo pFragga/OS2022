@@ -23,7 +23,7 @@ limited number of service points, therefore the system must implement mutual
 blocking (with mutexes) and synchronization (with condition variables).
 
 You can read more about it in the [assignment paper](os_project.pdf). It's in
-Greek though, so good luck :/
+Greek though, so good luck!
 
 Usage
 -----
