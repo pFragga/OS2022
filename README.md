@@ -1,8 +1,8 @@
 Operating Systems 2022 - Project
 ================================
 
-Final Project for my Operating Systems class at [AUEB](https://aueb.gr) during
-spring of 2022.
+Final Project for the Operating Systems Course at [Athens University of
+Economics and Business](https://aueb.gr) during spring of 2022.
 
 I'm uploading this now in 2023, because back then I hadn't learned git/github
 and I'm hoping that I'll get some experience in working with a remote
