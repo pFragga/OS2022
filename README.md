@@ -5,8 +5,7 @@ Economics and Business](https://aueb.gr) during spring of 2022.
 
 I'm uploading this now in 2023, because back then I hadn't learned git/github
 and I'm hoping that I'll get some experience in working with a remote
-repository. (Also, it's cool to flex on other cs students by saying that you
-use git lmao)
+repository.
 
 Goal
 ----
