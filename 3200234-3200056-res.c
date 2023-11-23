@@ -42,7 +42,8 @@ gen_theatre()
 	}
 }
 
-int gen_random(int a, int b) {
+int
+gen_random(int a, int b) {
 	return (rand_r(&seed) % (b - a + 1) + a);
 }
 
