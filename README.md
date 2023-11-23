@@ -1,6 +1,5 @@
 Operating Systems 2022 - Project
 ================================
-
 Final Project for the Operating Systems Course at [Athens University of
 Economics and Business](https://aueb.gr) during spring of 2022.
 
@@ -11,7 +10,6 @@ use git lmao)
 
 Goal
 ----
-
 Implement a booking system for seats at a theatre, using the POSIX threads
 (pthreads(7)) C library.
 
@@ -27,7 +25,6 @@ Greek though, so good luck!
 
 Usage
 -----
-
 After compiling with `make`, do:
 
 	./test-res 100 1000
