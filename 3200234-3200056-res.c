@@ -268,7 +268,7 @@ krathsh(void *tid)
 					printf("Zwnh %s, Seira %d, 8esh %d\n", cust_info.Zone, cust_info.seira-9, cust_info.theseis[i]+1);
 				}
 			}
-			printf("Kostizei(oun) %d$ synolika.\n", cust_info.cost);
+			printf("Kostizei(oun) $%d synolika.\n", cust_info.cost);
 		}
 		printf("------------------------------------\n\n"); pthread_mutex_unlock(&mutex_print);
 	}
@@ -333,7 +333,7 @@ create_threads(void *Ncust)
 	}
 	printf("----------------------------------------------------\n\n------------ Stats ------------\n");
 
-	printf("Esoda apo tis pwlhseis: %d$.\n", company_account);
+	printf("Esoda apo tis pwlhseis: $%d.\n", company_account);
 	printf("Krathseis me epityxia: %.2f%%\n", calc_percent(s_transactions));
 	printf("Krathseis me apotyxia logw 8esewn: %.2f%%\n", calc_percent(f_transactions_thl));
 	printf("Krathseis me apotyxia logw pistothkhs: %.2f%%\n", calc_percent(f_transactions_tam));
@@ -343,11 +343,11 @@ create_threads(void *Ncust)
 }
 
 int
-main(int argc, char const **argv)
+main(int argc, char const *argv[])
 {
 	/* ensure 2 arguments were given */
 	if (argc != 3) {
-		printf("test-res: illegal number of arguments\n");
+		printf("test-res: illegal number of arguments (must be 3)\n");
 		exit(-1);
 	}
 
