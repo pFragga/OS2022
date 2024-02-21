@@ -273,6 +273,8 @@ krathsh(void *tid)
 		}
 		printf("------------------------------------\n\n"); pthread_mutex_unlock(&mutex_print);
 	}
+
+	return (void *) 0;
 }
 
 void *
@@ -341,6 +343,8 @@ create_threads(void *Ncust)
 	printf("Mesos xronos anamonhs pelatwn: N/A\n"); // TODO
 	printf("Mesos xronos eksyphrethshs pelatwn: N/A\n"); // TODO
 	printf("-------------------------------\n");
+
+	return (void *) 0;
 }
 
 int
