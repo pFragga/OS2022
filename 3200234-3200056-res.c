@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <string.h>
 #include <time.h>
 #include "3200234-3200056-res.h"
 
@@ -74,7 +75,7 @@ try_to_pay()
 int
 calc_cost(char *Zone, int tickets)
 {
-	if (Zone == "A") {
+	if (strcmp(Zone, "A")) {
 		return tickets * CzoneA;
 	}
 	return tickets * CzoneB;
@@ -98,7 +99,7 @@ check_avail(int threadID, char *Zone, int tickets, INFORMATION *cust_info)
 
 	int start_of_seats;
 	int end_of_seats;
-	if(Zone == "A") {
+	if (strcmp(Zone, "A")) {
 		start_of_seats = 0;
 		end_of_seats = NzoneA;
 	} else {
@@ -262,7 +263,7 @@ krathsh(void *tid)
 		} else {
 			printf("\n------------ Pelaths %d ------------\nH krathsh oloklhrw8hke epityxws. Oi 8eseis sou einai:\n", threadID);
 			for (int i = 0; i < cust_info.tickets; i++) {
-				if (cust_info.Zone == "A") {
+				if (strcmp(cust_info.Zone, "A")) {
 					printf("Zwnh %s, Seira %d, 8esh %d\n", cust_info.Zone, cust_info.seira+1, cust_info.theseis[i]+1);
 				} else {
 					printf("Zwnh %s, Seira %d, 8esh %d\n", cust_info.Zone, cust_info.seira-9, cust_info.theseis[i]+1);
