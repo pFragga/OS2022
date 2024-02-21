@@ -1,10 +1,11 @@
+#include "3200234-3200056-res.h"
+
+#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <pthread.h>
 #include <string.h>
 #include <time.h>
-#include "3200234-3200056-res.h"
+#include <unistd.h>
 
 /* mutexes & condition variables */
 pthread_mutex_t mutex_thl, mutex_tam, mutex_thes, mutex_account, mutex_trans,
