@@ -1,8 +1,13 @@
 CC = cc
-CFLAGS = -pthread
+CFLAGS = -Wall -Wextra -pthread
+TARGET = test-res
 
-test-res:
-	${CC} ${CFLAGS} 3200234-3200056-res.c -o test-res
+all: $(TARGET)
+
+$(TARGET): 3200234-3200056-res.c 3200234-3200056-res.h
+	$(CC) $(CFLAGS) $< -o $@ 
 
 clean:
-	rm -vf test-res
+	rm -f test-res
+
+.PHONY: all clean
